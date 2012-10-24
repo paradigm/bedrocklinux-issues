@@ -1,0 +1,11 @@
+This is Bedrock Linux's issue tracker.
+
+If you would like to view these issues in your web browser, see:
+http://bedrocklinux.org/issues
+
+If you would like to create a new issue, comment on an issue, claim an issue,
+or anything else along those lines, install ditz:
+http://ditz.rubyforge.org/
+Utilize ditz to make the desired changes to your copy of the git repo and then
+send a pull request to the github repo at:
+https://github.com/paradigm/bedrocklinux-issues
