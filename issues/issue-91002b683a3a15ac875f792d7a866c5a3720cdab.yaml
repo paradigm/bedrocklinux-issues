@@ -1,0 +1,28 @@
+--- !ditz.rubyforge.org,2008-03-06/issue 
+title: An actual installer is needed
+desc: Requiring people manually follow the instructions on the website to install Bedrock Linux is an unnecessary barrier to entry which should be removed.  An actual installer is needed.
+type: :feature
+component: installer
+release: 
+reporter: paradigm <paradigm@bedrocklinux.org>
+status: :unstarted
+disposition: 
+creation_time: 2012-10-24 17:45:45.254195 Z
+references: []
+
+id: 91002b683a3a15ac875f792d7a866c5a3720cdab
+log_events: 
+- - 2012-10-24 18:07:22.141329 Z
+  - paradigm <paradigm@bedrocklinux.org>
+  - created
+  - |-
+    Thoughts on the installer:
+    
+    - Creating a Live Linux distro for this is against the Bedrock Linux philosophy.  Other distros already provide these - lets use those.  Thus, the installer should be something that can run any of a number of other Live distros such as the Ubuntu installer, Knoppix, Slax, etc, or an existing on-disk distro.  The code for the installer should be very portable - Bourne shell over bash, etc.
+    
+    - The installer should be broken down into the steps necessary to install Bedrock.  Early on in its development, most or even all of these steps could simply be instructions from the website printed out to the screen for the user to follow.  These steps can be replaced with automation one at a time.
+    
+    - Pre-built binaries should not be provided, for fear of end-users then relying on us to keep them up-to-date or limiting flexibility.  We should put some effort in ensuring the end-users are self-sufficient.  Either the binaries will be compiled during install process or yanked from a client.  Until we have an updater, the user should be warned that he or she is responsible for keeping the components up-to-date.  Eventually we should work towards an updater which could automate this.
+    
+    - Where possible, the user should be provided the option to either use a component from a client, have the installer compile it, or use another pre-compiled version (ie, the user has some solution we don't know about).
+claimer: 

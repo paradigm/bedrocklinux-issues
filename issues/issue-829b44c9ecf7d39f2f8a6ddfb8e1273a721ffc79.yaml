@@ -1,0 +1,35 @@
+--- !ditz.rubyforge.org,2008-03-06/issue 
+title: Script(s) to automate setting up a client
+desc: |-
+  We need some method of automating the process of adding a client.  There should
+  be a single command when run, would set up a supported distro as a client.
+type: :feature
+component: userland
+release: 
+reporter: paradigm <paradigm@bedrocklinux.org>
+status: :unstarted
+disposition: 
+creation_time: 2012-10-24 19:04:51.046882 Z
+references: []
+
+id: 829b44c9ecf7d39f2f8a6ddfb8e1273a721ffc79
+log_events: 
+- - 2012-10-24 19:09:33.552687 Z
+  - paradigm <paradigm@bedrocklinux.org>
+  - created
+  - |-
+    Some distros have commands to set them up in a directory.  Arch Linux's pacman,
+    for example, can do this, as can Debian's debootstrap (which should work for
+    many Debian-based distros as well, such as Ubuntu).  The 2.X branch of
+    febootstrap can do this for Fedora as well.
+    
+    We could, in theory, have a script which downloads the dependencies for these
+    commands from their respective distros, unpackages them (the core busybox could
+    include rpm, dpkg, ar, tar, etc) into a temporary directory.  It would then run
+    the commands to get the client and remove the temporary directory.  This could
+    work from the core or just about any other distro.
+    
+    For other distros which do not support this, it may be possible to automate
+    downloading their intaller's ISO, mounting it, and running the installation
+    scripts straight from it (skipping the partitioning step).
+claimer: 

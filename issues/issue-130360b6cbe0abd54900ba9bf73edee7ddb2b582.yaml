@@ -1,0 +1,23 @@
+--- !ditz.rubyforge.org,2008-03-06/issue 
+title: rework userland repository
+desc: The userland repository was set up with the assumption that everything in it would be text - scripts and configs.  However, as of Bosco, some compontents are binaries.  Thus it reworked.
+type: :task
+component: userland
+release: 1.0alpha3
+reporter: paradigm <paradigm@bedrocklinux.org>
+status: :unstarted
+disposition: 
+creation_time: 2012-10-24 18:15:14.862272 Z
+references: []
+
+id: 130360b6cbe0abd54900ba9bf73edee7ddb2b582
+log_events: 
+- - 2012-10-24 18:15:16.025892 Z
+  - paradigm <paradigm@bedrocklinux.org>
+  - created
+  - ""
+- - 2012-10-24 19:01:43.386986 Z
+  - paradigm <paradigm@bedrocklinux.org>
+  - issue claimed
+  - ""
+claimer: paradigm <paradigm@bedrocklinux.org>

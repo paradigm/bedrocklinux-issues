@@ -1,0 +1,24 @@
+--- !ditz.rubyforge.org,2008-03-06/issue 
+title: statoverride issue in Debian-based clients
+desc: Occasionally, apt/dpkg will complain about issues with statoverride.  This can be fixed by hand when it arises, but it shouldn't arise at all - needs to be fixed.
+type: :bugfix
+component: userland
+release: 
+reporter: paradigm <paradigm@bedrocklinux.org>
+status: :unstarted
+disposition: 
+creation_time: 2012-10-24 19:10:51.476726 Z
+references: []
+
+id: 5b1deb0fff09c4e796bd9421b7014ccb89894f99
+log_events: 
+- - 2012-10-24 19:11:34.117926 Z
+  - paradigm <paradigm@bedrocklinux.org>
+  - created
+  - |-
+    This most likely occurs because it expects a daemon should be running, but it
+    is not. This can be fixed in this instance by simply removing the contents of
+    /var/lib/dpkg/statoverride. Simply leave an empy file in that location.
+    However, that is only a temporary fix which has to be repeated - we need a
+    permanent fix.
+claimer: 

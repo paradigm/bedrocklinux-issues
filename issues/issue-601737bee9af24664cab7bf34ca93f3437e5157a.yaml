@@ -1,0 +1,24 @@
+--- !ditz.rubyforge.org,2008-03-06/issue 
+title: Website URLs should be simpler
+desc: |-
+  Currently many of the website's URLs are overly-verbose.  For example:
+  
+  http://bedrocklinux.org/faq.html#This%20sounds%20overly-ambitious.%20%20Do%20you%20really%20think%20you%20can%20pull%20this%20off?
+  
+  These should be significantly simplified.
+type: :bugfix
+component: website
+release: 
+reporter: paradigm <paradigm@bedrocklinux.org>
+status: :unstarted
+disposition: 
+creation_time: 2012-10-24 17:42:28.304354 Z
+references: []
+
+id: 601737bee9af24664cab7bf34ca93f3437e5157a
+log_events: 
+- - 2012-10-24 17:42:31.527539 Z
+  - paradigm <paradigm@bedrocklinux.org>
+  - created
+  - ""
+claimer: 

@@ -1,0 +1,54 @@
+--- !ditz.rubyforge.org,2008-03-06/issue 
+title: /etc/ file sync issue
+desc: |-
+  The current method for synchronizing /etc/passwd, /etc/shadow and /etc/group
+  between clients breaks the standard techniques used to change these files.
+  This should be fixed.
+type: :bugfix
+component: userland
+release: 
+reporter: paradigm <paradigm@bedrocklinux.org>
+status: :unstarted
+disposition: 
+creation_time: 2012-10-24 18:37:58.686250 Z
+references: []
+
+id: ed10277445e2bc796171ca53603f0894f300a5ef
+log_events: 
+- - 2012-10-24 19:01:14.913443 Z
+  - paradigm <paradigm@bedrocklinux.org>
+  - created
+  - |-
+    The problem is a result of three things:
+    
+    1. Since some things in /etc need to be shared between clients (such as passwd)
+    but other things need to be kept unique (such as issue), we cannot bind mount
+    all of /etc.  Something needs to be done to share specific files without /etc
+    without sharing others.
+    
+    2. While bind-mounts (what we use elsewhere) work for sharing individual files
+    for most things such as read and write, they break move/rename.  Consider how
+    move/rename works (change the filepath associated with an inode number), and
+    that mount points don't function via inode numbers that way.  These files are
+    typically changed (such as via adduser) by creating a new file (such as
+    /etc/passwd-), then move/renaming it over the actual file. 
+    
+    3. One potential solution is to symlink these files into a directory (which
+    *only* contains things which should be shared).  Moving/renaming over a symlink
+    should follow the symlink and change the actual file.  However, many
+    implementations of the typical methods for updating these files (such as the
+    GNU adduser) refuse to function on symlinks.
+    
+    Note that only actually moving/renaming is broken, and that other methods of
+    altering these files - such as "cat /etc/passwd- > /etc/passwd" work just fine.
+    
+    Possible solutions include:
+    - using some (userland) FUSE magic
+      - however, this is a sizable addition to the core
+    - replacing adduser and friends in something that can handle this situation
+     - may not be a good, clean way to do this, especially as the flags or exact
+     functionality for various implementations of these commands may not be the
+     same across different distros.
+    - having a tool which will detect these situations and fixes it (e.g.: runs the
+    "cat" statement above).  This could be called after tools such as adduser.
+claimer: 

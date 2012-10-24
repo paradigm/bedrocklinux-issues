@@ -1,0 +1,19 @@
+--- !ditz.rubyforge.org,2008-03-06/issue 
+title: Website needs news RSS
+desc: The website needs a page dedicated to news, and an companying RSS feed.
+type: :feature
+component: website
+release: 
+reporter: paradigm <paradigm@bedrocklinux.org>
+status: :unstarted
+disposition: 
+creation_time: 2012-10-24 17:43:24.560307 Z
+references: []
+
+id: cbea3dcd859d99cf4083f0913cf1fe5b8f6cc5f6
+log_events: 
+- - 2012-10-24 17:43:26.376082 Z
+  - paradigm <paradigm@bedrocklinux.org>
+  - created
+  - ""
+claimer: 

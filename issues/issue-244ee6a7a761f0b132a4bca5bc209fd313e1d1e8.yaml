@@ -1,0 +1,19 @@
+--- !ditz.rubyforge.org,2008-03-06/issue 
+title: Updater needed
+desc: Something to automate updating core Bedrock Linux components is needed.
+type: :feature
+component: updater
+release: 
+reporter: paradigm <paradigm@bedrocklinux.org>
+status: :unstarted
+disposition: 
+creation_time: 2012-10-24 18:09:34.115726 Z
+references: []
+
+id: 244ee6a7a761f0b132a4bca5bc209fd313e1d1e8
+log_events: 
+- - 2012-10-24 18:09:35.355325 Z
+  - paradigm <paradigm@bedrocklinux.org>
+  - created
+  - ""
+claimer: 

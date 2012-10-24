@@ -1,0 +1,19 @@
+--- !ditz.rubyforge.org,2008-03-06/issue 
+title: share man pages across clients
+desc: Most executables on a Bedrock Linux system can run most executables from any client in a reasonably transparent manner.  However, man pages are not so transparent.  It is a bit jarring when one can run, for example, "debootstrap" from *anywhere*, but "man debootstrap" doesn't work unless the user explicitly calls the proper man via brc.  It'd be nice if this was somehow made to work transparently as well.
+type: :feature
+component: userland
+release: 
+reporter: paradigm <paradigm@bedrocklinux.org>
+status: :unstarted
+disposition: 
+creation_time: 2012-10-24 19:13:33.162777 Z
+references: []
+
+id: 2e03cf889532e11876db8b76a2263e206fabdab4
+log_events: 
+- - 2012-10-24 19:13:34.335098 Z
+  - paradigm <paradigm@bedrocklinux.org>
+  - created
+  - ""
+claimer: 

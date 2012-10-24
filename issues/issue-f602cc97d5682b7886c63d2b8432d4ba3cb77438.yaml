@@ -1,0 +1,67 @@
+--- !ditz.rubyforge.org,2008-03-06/issue 
+title: brc which can break out of chroot
+desc: "For Bosco, brc should absorb capchroot's functionality.  Moreover, instead of excessively using mounts, it should break out of chroots.  See: http://bedrocklinux.org/1.0alpha3/"
+type: :feature
+component: userland
+release: 1.0alpha3
+reporter: paradigm <paradigm@bedrocklinux.org>
+status: :unstarted
+disposition: 
+creation_time: 2012-10-24 18:17:57.719225 Z
+references: []
+
+id: f602cc97d5682b7886c63d2b8432d4ba3cb77438
+log_events: 
+- - 2012-10-24 18:32:53.027334 Z
+  - paradigm <paradigm@bedrocklinux.org>
+  - created
+  - |-
+    Planned description is below.  Note the location of "brclients.conf" and
+    "brpath.conf" are both still up in the air.
+    
+    > This program will allow non-root users to run programs chrooted into
+    > directories specified by brclients.conf relative to the
+    > absolute root directory, breaking out of chroots as needed.
+    >
+    > If the command is called as "brc" (ie, args[0] == "brc"), then the first
+    > argument will be the name of the client as listed in brclients.conf.  If this
+    > is not given, brc will abort.  If further arguments are given, they will be
+    > the command (and its arguments) run in the chroot. If no arguments are given,
+    > the program specified in the $SHELL environmental variable will be run
+    > (without the path given - must be in $PATH in the chroot).
+    >
+    > If the command is called as something other than "brc", args[0] will be used
+    > as the command run in the chroot and the other args will be its arguments.
+    > The chroot directory will be determined based on brpath.conf.
+    >
+    > In order to allow non-root users to both chroot and break out of chroots,
+    > this program should be given the cap_sys_chroot=ep Linux capability.
+    >
+    > In order to avoid potential abuse of cap_sys_chroot, this program will abort
+    > if either of the configs it uses are owned by anyone other than root or are
+    > writable by anyone other than root.
+    
+    The steps necessary can be broken down into these parts:
+    
+    1. Security checks
+    1a. Ensure brc has cap_sys_chroot=ep
+    1a. Ensure brclients.conf and brpath.conf are owned by root and not writable by
+    anyone other than root.
+    
+    2. Determine needed information.
+    2a. Figure out the command and its arguments to be run in the chroot.
+    2b. Figure out the path to be chrooted (from the point of view of the "real" root directory)
+    2c. Figure out what should be the current working directory in the chroot.  This should be the cwd when the executable is run *if* that is available in the chroot.  Otherwise, fall back to the root directory of the chroot.
+    
+    3. Run desired program in chroot with proper cwd
+    3a. Go to real root (breaking out of chroot as needed)
+    3b. chroot()
+    3c. chdir()
+    3d. execute command (and have it replace this command)
+    
+    I have some code for this already done.  Once issue "{issue 130360b6cbe0abd54900ba9bf73edee7ddb2b582}" is completed I'll put the code in the userland repo.
+- - 2012-10-24 18:34:37.898093 Z
+  - paradigm <paradigm@bedrocklinux.org>
+  - issue claimed
+  - ""
+claimer: paradigm <paradigm@bedrocklinux.org>

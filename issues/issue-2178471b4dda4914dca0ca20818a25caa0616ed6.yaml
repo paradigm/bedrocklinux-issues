@@ -1,0 +1,27 @@
+--- !ditz.rubyforge.org,2008-03-06/issue 
+title: Website redesign
+desc: The current Bedrock Linux website was created without overly much experience in HTML/CSS.  It should be redesigned by someone more experienced at such things.
+type: :task
+component: website
+release: 
+reporter: paradigm <paradigm@bedrocklinux.org>
+status: :in_progress
+disposition: 
+creation_time: 2012-10-24 17:25:45.464823 Z
+references: []
+
+id: 2178471b4dda4914dca0ca20818a25caa0616ed6
+log_events: 
+- - 2012-10-24 17:27:03.457006 Z
+  - paradigm <paradigm@bedrocklinux.org>
+  - created
+  - simonlc in the IRC channel has been working on a redesign.  Once he's finished with the design itself I'll move the pages over to the new layout.
+- - 2012-10-24 17:27:51.916656 Z
+  - paradigm <paradigm@bedrocklinux.org>
+  - changed status from unstarted to in_progress
+  - ""
+- - 2012-10-24 17:35:27.291347 Z
+  - paradigm <paradigm@bedrocklinux.org>
+  - issue claimed
+  - ""
+claimer: simonlc <hi@simon.lc>

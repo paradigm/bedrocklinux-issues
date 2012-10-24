@@ -1,0 +1,72 @@
+--- !ditz.rubyforge.org,2008-03-06/project 
+name: bedrocklinux
+version: "0.5"
+components: 
+- !ditz.rubyforge.org,2008-03-06/component 
+  name: bedrocklinux
+- !ditz.rubyforge.org,2008-03-06/component 
+  name: userland
+- !ditz.rubyforge.org,2008-03-06/component 
+  name: website
+- !ditz.rubyforge.org,2008-03-06/component 
+  name: installer
+- !ditz.rubyforge.org,2008-03-06/component 
+  name: updater
+releases: 
+- !ditz.rubyforge.org,2008-03-06/release 
+  name: 1.0alpha1
+  status: :released
+  release_time: 2012-08-03 00:00:01 Z
+  log_events: 
+  - - 2012-08-03 00:00:00 Z
+    - paradigm <paradigm@bedrocklinux.org>
+    - created
+    - First public Bedrock Linux release, still alpha, named "Appa."
+  - - 2012-08-03 00:00:01 Z
+    - paradigm <paradigm@bedrocklinux.org>
+    - released
+    - While it still has quite a few issues, Appa is far enough along to function for day-to-day use.  It sufficiently demonstrates that the idea behind Bedrock Linux is quite feasible.
+- !ditz.rubyforge.org,2008-03-06/release 
+  name: 1.0alpha2
+  status: :released
+  release_time: 2012-08-03 00:00:01 Z
+  log_events: 
+  - - 2012-08-13 00:00:00 Z
+    - paradigm <paradigm@bedrocklinux.org>
+    - created
+    - Second public Bedrock Linux release, still alpha, named "Momo."  Mostly fixed issues that were made apparent soon after the prior release went public.
+  - - 2012-08-13 00:00:01 Z
+    - paradigm <paradigm@bedrocklinux.org>
+    - released
+    - |-
+      Soon after Appa went public, a number of issues were made apparent.  Momo is intended to polish these issues out and should suffice until the next big release is available.
+      
+      Changelog:
+      
+      - fixed (harmless) mount warnings on boot (rcS, brc)
+      - support for static /dev (rcS, rc.conf)
+      - fixed (harmless) warnings during /tmp cleanup on boot and shutdown (rcS, rcK)
+      - switched TIMEZONE to TZ to avoid confusion (rcS, rc.conf, profile)
+      - If using udev, support setting which client's udev via UDEV_CLIENT (rcS, rc.conf)
+      - rc.local is now run before brs during boot (rcS)
+      - Bedrock Linux ASCII logo on echoed on boot and shutdown (rcS,rcK)
+      - Unmounting during shutdown prints remaining mount points to unmount. (rcK)
+      - added hashbang line to rcK.clients (rcK.clients)
+      - improved comments in /etc/fstab
+      - added PATH warning in rc.local
+      - fixed space quote/escaping issue (brc,brp,brl)
+      - improved brw speed, and added ability to store values to disk to further improve speed substancially.
+      - added explanation and examples to brclients.conf
+      - brp now recognizes BR_CREATE_MISSING
+      - brp previously created unnecessarily long paths in the brpath executable wrappers. Fixed.
+      - bru now properly accepts stdin
+      - bru now has a -y flag to automatically respond "y" to every prompt
+- !ditz.rubyforge.org,2008-03-06/release 
+  name: 1.0alpha3
+  status: :unreleased
+  release_time: 
+  log_events: 
+  - - 2012-10-24 17:21:54.704337 Z
+    - paradigm <paradigm@bedrocklinux.org>
+    - created
+    - Third Bedrock Linux release, still alpha, named "Bosco".
