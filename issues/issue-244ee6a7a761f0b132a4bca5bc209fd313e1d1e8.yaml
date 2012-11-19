@@ -3,7 +3,7 @@ title: Updater needed
 desc: Something to automate updating core Bedrock Linux components is needed.
 type: :feature
 component: updater
-release: 
+release: 1.0alpha3
 reporter: paradigm <paradigm@bedrocklinux.org>
 status: :unstarted
 disposition: 
@@ -35,4 +35,8 @@ log_events:
     <cory_> ic, will probably utilize utilities from bedrock for finding the needed build software 
     <paradigm> sounds good to me
     <cory_> I will keep that in mind
+- - 2012-11-19 18:51:34.478468 Z
+  - paradigm <paradigm@bedrocklinux.org>
+  - assigned to release 1.0alpha3 from unassigned
+  - Assigning updater to Bosco's release.  If it doesn't make it we can push it back to a future release.
 claimer: ckoch786 <yunusabd786@gmail.com>
