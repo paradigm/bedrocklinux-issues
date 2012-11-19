@@ -16,4 +16,23 @@ log_events:
   - paradigm <paradigm@bedrocklinux.org>
   - created
   - ""
-claimer: 
+- - 2012-11-19 02:54:50.918315 Z
+  - ckoch786 <yunusabd786@gmail.com>
+  - issue claimed
+  - |-
+    <cory_> paradigm: I am interested in taking on the updater for bedrock. Should I just claim it on the issue tracker and submit a pull request or would you like to discuss it first?
+    <paradigm> We should probably discuss it either way
+    <paradigm> I didn't seem to put up my thoughts on the matter, which I probably should have
+    <paradigm> What I had in mind was that core components could be updated by compiling as needed *or* by grabbing them from a client distro as it updates them
+    <paradigm> So if busybox-static updates, grab that busybox
+    <paradigm> also support yanking a client's kernel
+    <paradigm> Alternatively, if the user doesn't use a client for something like that, compile
+    <paradigm> That about what you had in mind?  I'm certainly open to suggestion, especially if someone else is going to try to tackle the issue
+    <cory_> I like the idea of pulling in available updates from clients. I was thinking of keeping it all self contained by using utilities that are already in busybox.
+    <paradigm> sounds perfect to me
+    <paradigm> will still have to go out to a client for things like gcc to compile things that aren't available from a client, such as if the user prefers to compile his or her own busybox or kernel
+    <paradigm> Note eventually there will likely be a package manager manager that the updater will be pulled into, but its still a ways away
+    <cory_> ic, will probably utilize utilities from bedrock for finding the needed build software 
+    <paradigm> sounds good to me
+    <cory_> I will keep that in mind
+claimer: ckoch786 <yunusabd786@gmail.com>
