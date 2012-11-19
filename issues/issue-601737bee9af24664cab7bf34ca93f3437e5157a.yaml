@@ -8,7 +8,7 @@ desc: |-
   These should be significantly simplified.
 type: :bugfix
 component: website
-release: 
+release: 1.0alpha3
 reporter: paradigm <paradigm@bedrocklinux.org>
 status: :closed
 disposition: :fixed
@@ -25,4 +25,8 @@ log_events:
   - paradigm <paradigm@bedrocklinux.org>
   - closed with disposition fixed
   - URLs for links such as the FAQ have been shortened.  Sadly this also means old links are broken, but if that ends up being the case, best to do this sooner than later.
+- - 2012-11-19 18:48:27.799028 Z
+  - paradigm <paradigm@bedrocklinux.org>
+  - assigned to release 1.0alpha3 from unassigned
+  - ""
 claimer: 

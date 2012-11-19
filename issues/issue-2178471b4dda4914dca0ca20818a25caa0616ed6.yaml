@@ -3,7 +3,7 @@ title: Website redesign
 desc: The current Bedrock Linux website was created without overly much experience in HTML/CSS.  It should be redesigned by someone more experienced at such things.
 type: :task
 component: website
-release: 
+release: 1.0alpha3
 reporter: paradigm <paradigm@bedrocklinux.org>
 status: :closed
 disposition: :fixed
@@ -32,4 +32,8 @@ log_events:
   - paradigm <paradigm@bedrocklinux.org>
   - closed with disposition fixed
   - Website now uses simonlc's work, and is generated from markdown with a relatively simple script
+- - 2012-11-19 18:48:18.340273 Z
+  - paradigm <paradigm@bedrocklinux.org>
+  - assigned to release 1.0alpha3 from unassigned
+  - ""
 claimer: 

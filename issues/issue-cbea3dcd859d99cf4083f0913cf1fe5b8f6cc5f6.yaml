@@ -3,7 +3,7 @@ title: Website needs news RSS
 desc: The website needs a page dedicated to news, and an companying RSS feed.
 type: :feature
 component: website
-release: 
+release: 1.0alpha3
 reporter: paradigm <paradigm@bedrocklinux.org>
 status: :closed
 disposition: :fixed
@@ -20,4 +20,8 @@ log_events:
   - paradigm <paradigm@bedrocklinux.org>
   - closed with disposition fixed
   - The website now has a news page from which an atom feed is generated.
+- - 2012-11-19 18:48:30.197462 Z
+  - paradigm <paradigm@bedrocklinux.org>
+  - assigned to release 1.0alpha3 from unassigned
+  - ""
 claimer: 
