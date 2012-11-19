@@ -1,0 +1,23 @@
+--- !ditz.rubyforge.org,2008-03-06/issue 
+title: new brp
+desc: brc performance was improved in {issue f602cc97d5682b7886c63d2b8432d4ba3cb77438}.  It now also supports being called as something else and running based no how it is called.  For example, if a symlink were to be made to it with a different name, it would try to run run the corresponding executable.  brp needs to be reworked create a bunch of symlinks pointing to brc rather than shell wrappers.
+type: :feature
+component: userland
+release: 
+reporter: paradigm <paradigm@bedrocklinux.org>
+status: :unstarted
+disposition: 
+creation_time: 2012-11-19 18:32:15.413197 Z
+references: []
+
+id: fd9aafbcb9f9ea73fc08c19e46114157fd814932
+log_events: 
+- - 2012-11-19 18:32:16.524429 Z
+  - paradigm <paradigm@bedrocklinux.org>
+  - created
+  - ""
+- - 2012-11-19 18:32:32.841897 Z
+  - paradigm <paradigm@bedrocklinux.org>
+  - issue claimed
+  - ""
+claimer: paradigm <paradigm@bedrocklinux.org>
