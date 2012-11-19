@@ -1,0 +1,40 @@
+--- !ditz.rubyforge.org,2008-03-06/issue 
+title: package manager manager
+desc: |-
+  A package manager manager could make Bedrock Linux significantly more pleasant to use.
+  
+  Currently, managing packages in client distros requires chrooting to that clients and using the client's own package manager.  This means a non-unified user interface is required for each distro.  Sometimes apt-get, sometimes pacman, sometimes yum.  It would be nice if something was available to wrap around all of these programs, offering a unified interface.  For example:
+  
+  $ pmm install --client=arch firefox
+  
+  Would call pacman in an Arch Linux client and install firefox there.
+  
+  $ pmm install --client=any sage-mathematics
+  
+  Would install sage-mathematics in the first client it finds which has that package in its repos.
+  
+  $ pmm install --version=newest libreoffice
+  
+  Would look through all of the clients for which has the newest copy of libreoffice in its repos and install that one.
+  
+  $ pmm install --version=7.2 vim
+  
+  Would install vim in the first client that it finds which has version 7.2
+  
+  If it is possible to significantly improve speed by caching information, this could be a good idea, but it'd be nice if it also works without caching.  Moreover, it should be super-portable and run primarily from just busybo's utilities.
+type: :feature
+component: package manager manager
+release: 
+reporter: paradigm <paradigm@bedrocklinux.org>
+status: :unstarted
+disposition: 
+creation_time: 2012-11-19 02:04:50.896340 Z
+references: []
+
+id: 2fa2f73badc6d1f44886620b69535fcbf810a7b3
+log_events: 
+- - 2012-11-19 02:04:51.895282 Z
+  - paradigm <paradigm@bedrocklinux.org>
+  - created
+  - ""
+claimer: 
