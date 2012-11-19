@@ -23,7 +23,7 @@ desc: |-
   
   If it is possible to significantly improve speed by caching information, this could be a good idea, but it'd be nice if it also works without caching.  Moreover, it should be super-portable and run primarily from just busybo's utilities.
 type: :feature
-component: package manager manager
+component: pmm
 release: 
 reporter: paradigm <paradigm@bedrocklinux.org>
 status: :unstarted
