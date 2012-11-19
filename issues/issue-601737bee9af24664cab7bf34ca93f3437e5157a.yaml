@@ -10,8 +10,8 @@ type: :bugfix
 component: website
 release: 
 reporter: paradigm <paradigm@bedrocklinux.org>
-status: :unstarted
-disposition: 
+status: :closed
+disposition: :fixed
 creation_time: 2012-10-24 17:42:28.304354 Z
 references: []
 
@@ -21,4 +21,8 @@ log_events:
   - paradigm <paradigm@bedrocklinux.org>
   - created
   - ""
+- - 2012-11-19 00:02:12.417429 Z
+  - paradigm <paradigm@bedrocklinux.org>
+  - closed with disposition fixed
+  - URLs for links such as the FAQ have been shortened.  Sadly this also means old links are broken, but if that ends up being the case, best to do this sooner than later.
 claimer: 

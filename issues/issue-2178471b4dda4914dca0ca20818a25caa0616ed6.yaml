@@ -5,8 +5,8 @@ type: :task
 component: website
 release: 
 reporter: paradigm <paradigm@bedrocklinux.org>
-status: :in_progress
-disposition: 
+status: :closed
+disposition: :fixed
 creation_time: 2012-10-24 17:25:45.464823 Z
 references: []
 
@@ -24,4 +24,12 @@ log_events:
   - paradigm <paradigm@bedrocklinux.org>
   - issue claimed
   - ""
-claimer: simonlc <hi@simon.lc>
+- - 2012-11-18 23:53:16.159437 Z
+  - paradigm <paradigm@bedrocklinux.org>
+  - commented
+  - The update is finished and moved over.
+- - 2012-11-19 00:01:10.399758 Z
+  - paradigm <paradigm@bedrocklinux.org>
+  - closed with disposition fixed
+  - Website now uses simonlc's work, and is generated from markdown with a relatively simple script
+claimer: 

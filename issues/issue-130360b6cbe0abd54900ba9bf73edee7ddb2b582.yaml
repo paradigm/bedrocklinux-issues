@@ -5,8 +5,8 @@ type: :task
 component: userland
 release: 1.0alpha3
 reporter: paradigm <paradigm@bedrocklinux.org>
-status: :unstarted
-disposition: 
+status: :closed
+disposition: :wontfix
 creation_time: 2012-10-24 18:15:14.862272 Z
 references: []
 
@@ -20,4 +20,8 @@ log_events:
   - paradigm <paradigm@bedrocklinux.org>
   - issue claimed
   - ""
+- - 2012-11-19 00:05:44.642168 Z
+  - paradigm <paradigm@bedrocklinux.org>
+  - closed with disposition wontfix
+  - Wasn't necessary.  Can just toss source code into /usr/src/, from which the install instructions and/or installer can generate the executables and place accordingly.  Might be wise to make a Makefile as well for those who want to toy with this without reading the instructions or using an installer for some reason.
 claimer: paradigm <paradigm@bedrocklinux.org>
