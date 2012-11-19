@@ -1,0 +1,25 @@
+--- !ditz.rubyforge.org,2008-03-06/issue 
+title: move everything to /bedrock
+desc: |-
+  Bedrock requires a few items to be included in each client at places such as
+  /opt/bedrock and /usr/local/brpath.  This has caused at least one (albeit
+  minor) conflict with a client.  Instead, everything could be placed in a single
+  directory - /bedrock.  This is significantly less likely to cause conflicts
+  with other distros.  This could also make things conceptually simpler on
+  end-users.
+type: :feature
+component: userland
+release: 1.0alpha3
+reporter: paradigm <paradigm@bedrocklinux.org>
+status: :unstarted
+disposition: 
+creation_time: 2012-11-19 18:43:01.951933 Z
+references: []
+
+id: 29b243eb3062d765efa721c12f7116e8222c0eda
+log_events: 
+- - 2012-11-19 18:43:02.766670 Z
+  - paradigm <paradigm@bedrocklinux.org>
+  - created
+  - ""
+claimer: 

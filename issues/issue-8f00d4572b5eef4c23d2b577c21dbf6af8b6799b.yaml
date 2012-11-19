@@ -1,0 +1,23 @@
+--- !ditz.rubyforge.org,2008-03-06/issue 
+title: bri
+desc: "As of Momo, many information gathering commands are attached to other commands in unintuitive ways.  For example, to get a list of clients, one runs \"brc -l\" - brc should not be in charge of this.  Instead, there should be a single command to go to which returns such miscellanous information about bedrock: \"bri\"."
+type: :feature
+component: userland
+release: 1.0alpha3
+reporter: paradigm <paradigm@bedrocklinux.org>
+status: :unstarted
+disposition: 
+creation_time: 2012-11-19 18:38:42.354383 Z
+references: []
+
+id: 8f00d4572b5eef4c23d2b577c21dbf6af8b6799b
+log_events: 
+- - 2012-11-19 18:38:43.215308 Z
+  - paradigm <paradigm@bedrocklinux.org>
+  - created
+  - ""
+- - 2012-11-19 18:38:52.921466 Z
+  - paradigm <paradigm@bedrocklinux.org>
+  - issue claimed
+  - ""
+claimer: paradigm <paradigm@bedrocklinux.org>

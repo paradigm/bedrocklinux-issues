@@ -3,7 +3,7 @@ title: new brp
 desc: brc performance was improved in {issue f602cc97d5682b7886c63d2b8432d4ba3cb77438}.  It now also supports being called as something else and running based no how it is called.  For example, if a symlink were to be made to it with a different name, it would try to run run the corresponding executable.  brp needs to be reworked create a bunch of symlinks pointing to brc rather than shell wrappers.
 type: :feature
 component: userland
-release: 
+release: 1.0alpha3
 reporter: paradigm <paradigm@bedrocklinux.org>
 status: :unstarted
 disposition: 
@@ -19,5 +19,9 @@ log_events:
 - - 2012-11-19 18:32:32.841897 Z
   - paradigm <paradigm@bedrocklinux.org>
   - issue claimed
+  - ""
+- - 2012-11-19 18:39:36.919586 Z
+  - paradigm <paradigm@bedrocklinux.org>
+  - assigned to release 1.0alpha3 from unassigned
   - ""
 claimer: paradigm <paradigm@bedrocklinux.org>
