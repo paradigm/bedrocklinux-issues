@@ -1,0 +1,19 @@
+--- !ditz.rubyforge.org,2008-03-06/issue 
+title: shell-agnostic way to launch shell as login shell
+desc: If brsh thinks it is being called as a login shell, it sources /etc/profile then runs the desired shell.  If there is a proper shell-agnostic way to call *any* shell as a login shell (to force the shell to source /etc/profile and the like itself), that would be preferable.
+type: :feature
+component: userland
+release: 
+reporter: paradigm <paradigm@bedrocklinux.org>
+status: :unstarted
+disposition: 
+creation_time: 2012-11-19 19:57:31.703356 Z
+references: []
+
+id: 27f41ad1829f362eb5af72bbe4297ae17f2ab6cd
+log_events: 
+- - 2012-11-19 19:57:32.444029 Z
+  - paradigm <paradigm@bedrocklinux.org>
+  - created
+  - ""
+claimer: 

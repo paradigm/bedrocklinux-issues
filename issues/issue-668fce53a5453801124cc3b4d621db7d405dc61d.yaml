@@ -1,0 +1,22 @@
+--- !ditz.rubyforge.org,2008-03-06/issue 
+title: "brsh: determine if called as login shell or not"
+desc: |-
+  Currently, the method brsh uses to detect if it is a login shell or not is somewhat hacky: it checks of if $TZ is set.  If it is not (yet) set, it didn't yet source /etc/profile, which means it is probably a login shell.
+  
+  If there is a proper way to do this, it would be preferable.
+type: :feature
+component: userland
+release: 
+reporter: paradigm <paradigm@bedrocklinux.org>
+status: :unstarted
+disposition: 
+creation_time: 2012-11-19 19:51:39.550790 Z
+references: []
+
+id: 668fce53a5453801124cc3b4d621db7d405dc61d
+log_events: 
+- - 2012-11-19 19:51:40.421043 Z
+  - paradigm <paradigm@bedrocklinux.org>
+  - created
+  - ""
+claimer: 
