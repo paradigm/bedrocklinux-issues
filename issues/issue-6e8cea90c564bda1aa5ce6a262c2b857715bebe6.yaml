@@ -1,0 +1,27 @@
+--- !ditz.rubyforge.org,2008-03-06/issue 
+title: support poweroff
+desc: |-
+  A number of commands talk to init to shutdown the system, such as poweroff,
+  halt and shutdown.  These have to be init-specific, meanning clients versions
+  of these commands will not function properly.  However, those from the core
+  Bedrock busybox do work.  Thus, brc-wrapped version of halt and poweroff can be
+  placed at the beginning of the PATH to ensure function versions of these
+  commands are available from clients.  However, busybox does not provide
+  shutdown.  If anyone has ideas for a way to get shutdown to work from any given
+  client, we should implement it.
+type: :feature
+component: userland
+release: 
+reporter: paradigm <paradigm@bedrocklinux.org>
+status: :unstarted
+disposition: 
+creation_time: 2012-11-21 21:21:06.023886 Z
+references: []
+
+id: 6e8cea90c564bda1aa5ce6a262c2b857715bebe6
+log_events: 
+- - 2012-11-21 21:21:07.481696 Z
+  - paradigm <paradigm@bedrocklinux.org>
+  - created
+  - ""
+claimer: 
