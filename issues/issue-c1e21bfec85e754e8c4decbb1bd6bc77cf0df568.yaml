@@ -1,0 +1,23 @@
+--- !ditz.rubyforge.org,2008-03-06/issue 
+title: list of utilized busybox commands
+desc: |-
+  We should track which busybox commands we are using, and by extension, which
+  features busybox requires.  This is needed both to inform users who compile
+  busybox what options they have to use as well as do a sanity if using a busybox
+  from another source.
+type: :task
+component: userland
+release: 
+reporter: paradigm <paradigm@bedrocklinux.org>
+status: :unstarted
+disposition: 
+creation_time: 2012-11-21 21:35:30.926293 Z
+references: []
+
+id: c1e21bfec85e754e8c4decbb1bd6bc77cf0df568
+log_events: 
+- - 2012-11-21 21:35:31.789525 Z
+  - paradigm <paradigm@bedrocklinux.org>
+  - created
+  - ""
+claimer: 
