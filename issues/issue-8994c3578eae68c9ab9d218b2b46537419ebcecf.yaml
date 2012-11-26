@@ -1,0 +1,23 @@
+--- !ditz.rubyforge.org,2008-03-06/issue 
+title: convert brclients.conf to proper ini format
+desc: As of Momo, brclients.conf uses something similar to but not exactly ini format.  This doesn't really have much benefit but could potentially cause confusion.  This should be changed to a proper ini-style format.
+type: :task
+component: userland
+release: 1.0alpha3
+reporter: paradigm <paradigm@bedrocklinux.org>
+status: :unstarted
+disposition: 
+creation_time: 2012-11-26 19:58:58.451179 Z
+references: []
+
+id: 8994c3578eae68c9ab9d218b2b46537419ebcecf
+log_events: 
+- - 2012-11-26 19:58:59.427398 Z
+  - paradigm <paradigm@bedrocklinux.org>
+  - created
+  - ""
+- - 2012-11-26 19:59:09.187310 Z
+  - paradigm <paradigm@bedrocklinux.org>
+  - issue claimed
+  - ""
+claimer: paradigm <paradigm@bedrocklinux.org>
