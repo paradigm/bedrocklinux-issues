@@ -1,0 +1,80 @@
+--- !ditz.rubyforge.org,2008-03-06/issue 
+title: add way to simplify client mount config
+desc: |-
+  In Momo, configuration for client mount setup has been considered both (a) overly
+  confusing and (b) overly much work.  Both of these should be remedied.
+  
+  Part of the confusion was a result of the fact that the configuration was split
+  across two files: brclients.conf and fstab.  This was done as a result of the
+  need to create mounts as a non-root user on the fly, which with Bosco's brc is
+  no longer a requirement.
+type: :feature
+component: userland
+release: 1.0alpha3
+reporter: paradigm <paradigm@bedrocklinux.org>
+status: :unstarted
+disposition: 
+creation_time: 2012-11-30 08:18:36.789998 Z
+references: []
+
+id: 58dd8f2a86d772e886a399b3baa0c6f51037e04b
+log_events: 
+- - 2012-11-30 08:37:27.899723 Z
+  - paradigm <paradigm@bedrocklinux.org>
+  - created
+  - |-
+    Proposal:
+    
+    There will be two options for setting up client mount configuration: one for
+    those who want fine-tuned control and one for those who both have lesser needs
+    are would rather simpler configuration files.
+    
+    The users who want fine-tuned control over mounting can simply place everything
+    in /etc/fstab.  /etc/fstab is a well established, well documented standard in
+    just about every major UNIXy OS - requiring end-users who want this level of
+    control to understand it is a reasonable expectation.  Moreover, any attempt to
+    create a new system which offers a similar level of control is unnecessarily
+    re-creating the whell.
+    
+    However, some users seem to have issues with /etc/fstab:
+    - It is more complicated than necessary (and has resulted in confusion with
+    some users).
+    - Many clients will likely share a similar if not identical set of mounts;
+    however, /etc/fstab does not provide a way to take advantage of this to reduce
+    verbosity; it requires everything to be spelled out for each mount.
+    
+    Thus, another option should be provided.  In order to keep it simple, it will
+    the following requirements/limitations:
+    - Everything set in these configs will be run after /etc/fstab is mounted.  If
+    this is used, there will be no special mechanism to do things such as share
+    /home with this and then mount something inside of /home in one client
+    afterwards.  That could be acheived via /etc/rc.local, however.
+    - To keep things simple, all of the mounts are bind mounts.  They may also be
+    shared-subtree mounted as well - not yet decided on this.
+    - There will be no way to configure things such as having some mounts be
+    read-only.
+    - The shared items will be in the same place in the core Bedrock as in the
+    client.  For example, one cannot have "/lib/firmware" in one client be
+    "/usr/lib/firmware" in another set via configuration.  Either have a symlink in
+    clients (through which the mount will propogate), or use /etc/fstab.
+    
+    This second option will have two ways to set:
+    1. With the "mount" item in brclients.conf.  Unlike in Momo, all of the mounts
+    will be listed in it on one line, comma-deliminated.  For example:
+    
+        mount = /proc,/sys,/dev,/home
+    
+    2. With a new "mountgroup" functionality.  To create a mountgroup, there needs
+    to be a section heading with a mount setting.  For example, to create the
+    mountgroup "standard" which includes /proc, /sys, /dev and /home:
+    
+        [mountgroup "standard"]
+        mount = /proc,/sys,/dev,/home
+    
+    Then later in brclients.conf a "mountgroup" setting can be set for each client:
+    
+        [client "debian"]
+        mountgroup = standard
+    
+    This will make configuration files less verbose.
+claimer: 

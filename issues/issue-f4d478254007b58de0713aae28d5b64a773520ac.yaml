@@ -1,0 +1,28 @@
+--- !ditz.rubyforge.org,2008-03-06/issue 
+title: init script support possibilities from initrd
+desc: |-
+  One goal for a future release is to allow using sets of {kernel,modules,initrd}
+  from clients.  To ensure this is a possibility, The init script should be
+  altered to take into consideration work which was done by the initrd.  For
+  example, it should not assume /proc is not mounted, as the initrd might have
+  mounted it, if an initrd was used.
+type: :feature
+component: userland
+release: 1.0alpha3
+reporter: paradigm <paradigm@bedrocklinux.org>
+status: :unstarted
+disposition: 
+creation_time: 2012-11-30 07:58:57.511597 Z
+references: []
+
+id: f4d478254007b58de0713aae28d5b64a773520ac
+log_events: 
+- - 2012-11-30 07:58:58.657761 Z
+  - paradigm <paradigm@bedrocklinux.org>
+  - created
+  - ""
+- - 2012-11-30 07:59:10.356073 Z
+  - paradigm <paradigm@bedrocklinux.org>
+  - issue claimed
+  - ""
+claimer: paradigm <paradigm@bedrocklinux.org>
