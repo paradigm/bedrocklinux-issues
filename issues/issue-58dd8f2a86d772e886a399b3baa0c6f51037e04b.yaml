@@ -77,4 +77,8 @@ log_events:
         mountgroup = standard
     
     This will make configuration files less verbose.
-claimer: 
+- - 2012-11-30 08:40:01.701873 Z
+  - paradigm <paradigm@bedrocklinux.org>
+  - issue claimed
+  - ""
+claimer: paradigm <paradigm@bedrocklinux.org>
