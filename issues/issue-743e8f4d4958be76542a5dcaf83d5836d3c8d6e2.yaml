@@ -1,0 +1,25 @@
+--- !ditz.rubyforge.org,2008-03-06/issue 
+title: brs should be able to un-mount clients
+desc: |-
+  In addition to being able to use brs to set up a client, brs should also be
+  able to reverse the process to allow a user to safely remove a client.
+type: :feature
+component: userland
+release: 1.0alpha3
+reporter: paradigm <paradigm@bedrocklinux.org>
+status: :unstarted
+disposition: 
+creation_time: 2012-11-30 19:04:10.219464 Z
+references: []
+
+id: 743e8f4d4958be76542a5dcaf83d5836d3c8d6e2
+log_events: 
+- - 2012-11-30 19:04:11.410983 Z
+  - paradigm <paradigm@bedrocklinux.org>
+  - created
+  - ""
+- - 2012-11-30 19:04:18.911370 Z
+  - paradigm <paradigm@bedrocklinux.org>
+  - issue claimed
+  - ""
+claimer: paradigm <paradigm@bedrocklinux.org>
