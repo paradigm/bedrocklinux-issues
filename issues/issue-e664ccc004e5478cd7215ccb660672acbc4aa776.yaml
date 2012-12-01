@@ -1,0 +1,26 @@
+--- !ditz.rubyforge.org,2008-03-06/issue 
+title: core bedrock support general busybox options
+desc: |-
+  In order to support pre-compiled busyboxes (such as from a client), support for
+  most sane combinations of busybox compile-time options need to be supported,
+  such as busybox both with and without INSTALL_NO_USR and FEATURE_MTAB_SUPPORT.
+type: :task
+component: userland
+release: 1.0alpha3
+reporter: paradigm <paradigm@bedrocklinux.org>
+status: :unstarted
+disposition: 
+creation_time: 2012-12-01 16:51:55.977661 Z
+references: []
+
+id: e664ccc004e5478cd7215ccb660672acbc4aa776
+log_events: 
+- - 2012-12-01 16:51:57.349614 Z
+  - paradigm <paradigm@bedrocklinux.org>
+  - created
+  - ""
+- - 2012-12-01 16:52:06.776838 Z
+  - paradigm <paradigm@bedrocklinux.org>
+  - issue claimed
+  - ""
+claimer: paradigm <paradigm@bedrocklinux.org>
