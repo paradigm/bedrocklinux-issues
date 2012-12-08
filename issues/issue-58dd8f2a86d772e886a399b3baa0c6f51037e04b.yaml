@@ -34,7 +34,7 @@ log_events:
     just about every major UNIXy OS - requiring end-users who want this level of
     control to understand it is a reasonable expectation.  Moreover, any attempt to
     create a new system which offers a similar level of control is unnecessarily
-    re-creating the whell.
+    re-creating the wheel.
     
     However, some users seem to have issues with /etc/fstab:
     - It is more complicated than necessary (and has resulted in confusion with
