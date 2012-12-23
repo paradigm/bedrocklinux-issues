@@ -2,7 +2,7 @@
 title: Updater needed
 desc: Something to automate updating core Bedrock Linux components is needed.
 type: :feature
-component: updater
+component: userland
 release: 1.0alpha3
 reporter: paradigm <paradigm@bedrocklinux.org>
 status: :unstarted
@@ -39,4 +39,8 @@ log_events:
   - paradigm <paradigm@bedrocklinux.org>
   - assigned to release 1.0alpha3 from unassigned
   - Assigning updater to Bosco's release.  If it doesn't make it we can push it back to a future release.
+- - 2012-12-23 02:20:03.094245 Z
+  - paradigm <paradigm@bedrocklinux.org>
+  - assigned to component userland from updater
+  - This should be in userland; it does not require its own component.
 claimer: ckoch786 <yunusabd786@gmail.com>

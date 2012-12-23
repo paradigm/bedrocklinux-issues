@@ -23,7 +23,7 @@ desc: |-
   
   If it is possible to significantly improve speed by caching information, this could be a good idea, but it'd be nice if it also works without caching.  Moreover, it should be super-portable and run primarily from just busybo's utilities.
 type: :feature
-component: pmm
+component: userland
 release: 
 reporter: paradigm <paradigm@bedrocklinux.org>
 status: :unstarted
@@ -37,4 +37,8 @@ log_events:
   - paradigm <paradigm@bedrocklinux.org>
   - created
   - ""
+- - 2012-12-23 02:19:18.739172 Z
+  - paradigm <paradigm@bedrocklinux.org>
+  - assigned to component userland from pmm
+  - This should be in userland.  No need for a separate component just for it.
 claimer: 

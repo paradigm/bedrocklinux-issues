@@ -10,10 +10,6 @@ components:
   name: website
 - !ditz.rubyforge.org,2008-03-06/component 
   name: installer
-- !ditz.rubyforge.org,2008-03-06/component 
-  name: updater
-- !ditz.rubyforge.org,2008-03-06/component 
-  name: pmm
 releases: 
 - !ditz.rubyforge.org,2008-03-06/release 
   name: 1.0alpha1

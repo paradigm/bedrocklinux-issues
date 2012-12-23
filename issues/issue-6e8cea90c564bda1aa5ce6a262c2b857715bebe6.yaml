@@ -1,5 +1,5 @@
 --- !ditz.rubyforge.org,2008-03-06/issue 
-title: support poweroff
+title: support shutdown
 desc: |-
   A number of commands talk to init to shutdown the system, such as poweroff,
   halt and shutdown.  These have to be init-specific, meanning clients versions
@@ -24,4 +24,8 @@ log_events:
   - paradigm <paradigm@bedrocklinux.org>
   - created
   - ""
+- - 2012-12-23 02:17:34.005118 Z
+  - paradigm <paradigm@bedrocklinux.org>
+  - commented
+  - bosco will have a shutdown wrapper at the beginning of the PATH that warns users not to use "shutdown" and provide working alternatives.  This will suffice for now, but a better solution is desirable.
 claimer: 

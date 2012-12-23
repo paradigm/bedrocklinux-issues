@@ -5,8 +5,8 @@ type: :feature
 component: userland
 release: 1.0alpha3
 reporter: paradigm <paradigm@bedrocklinux.org>
-status: :unstarted
-disposition: 
+status: :closed
+disposition: :fixed
 creation_time: 2012-11-19 18:32:15.413197 Z
 references: []
 
@@ -24,4 +24,8 @@ log_events:
   - paradigm <paradigm@bedrocklinux.org>
   - assigned to release 1.0alpha3 from unassigned
   - ""
+- - 2012-12-23 02:11:38.060427 Z
+  - paradigm <paradigm@bedrocklinux.org>
+  - closed with disposition fixed
+  - Done in the 1.0alpha3 branch of the userland repo
 claimer: paradigm <paradigm@bedrocklinux.org>

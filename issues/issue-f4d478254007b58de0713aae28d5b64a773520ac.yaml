@@ -10,8 +10,8 @@ type: :feature
 component: userland
 release: 1.0alpha3
 reporter: paradigm <paradigm@bedrocklinux.org>
-status: :unstarted
-disposition: 
+status: :closed
+disposition: :fixed
 creation_time: 2012-11-30 07:58:57.511597 Z
 references: []
 
@@ -25,4 +25,8 @@ log_events:
   - paradigm <paradigm@bedrocklinux.org>
   - issue claimed
   - ""
+- - 2012-12-23 02:12:55.280217 Z
+  - paradigm <paradigm@bedrocklinux.org>
+  - closed with disposition fixed
+  - Support is available in the 1.0alpha3 branch of the userland repo
 claimer: paradigm <paradigm@bedrocklinux.org>
