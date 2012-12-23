@@ -5,7 +5,7 @@ desc: |-
   able to reverse the process to allow a user to safely remove a client.
 type: :feature
 component: userland
-release: 1.0alpha3
+release: 
 reporter: paradigm <paradigm@bedrocklinux.org>
 status: :unstarted
 disposition: 

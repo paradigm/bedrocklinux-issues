@@ -3,7 +3,7 @@ title: Updater needed
 desc: Something to automate updating core Bedrock Linux components is needed.
 type: :feature
 component: userland
-release: 1.0alpha3
+release: 
 reporter: paradigm <paradigm@bedrocklinux.org>
 status: :unstarted
 disposition: 
