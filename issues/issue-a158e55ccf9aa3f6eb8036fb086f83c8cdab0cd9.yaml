@@ -49,4 +49,8 @@ log_events:
       program noticies that they're still not identical (because something changed
       while it was working), it can repeat the process of diffing to figure out
       what is different and patching the rest of the files.
-claimer: 
+- - 2012-12-28 16:21:49.509442 Z
+  - Morgawr <morgawr@gmail.com>
+  - issue claimed
+  - ""
+claimer: Morgawr <morgawr@gmail.com>
