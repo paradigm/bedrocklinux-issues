@@ -23,4 +23,30 @@ log_events:
   - paradigm <paradigm@bedrocklinux.org>
   - issue claimed
   - ""
-claimer: paradigm <paradigm@bedrocklinux.org>
+- - 2012-12-28 15:49:16.130528 Z
+  - paradigm <paradigm@bedrocklinux.org>
+  - issue unclaimed
+  - someone else seems interested in tackling it, I'll let them give it a go first
+- - 2012-12-28 16:00:07.422384 Z
+  - paradigm <paradigm@bedrocklinux.org>
+  - commented
+  - |-
+    Various thoughts:
+    
+    - It will probably have to be in C since busybox doesn't come with any inotify tools.
+    
+    - Exactly what files are being watched should be configurable somewhere.
+    
+    - There is a potential problem when multiple items are updated too soon.  To
+    resolve this:
+    
+      - the program should make diff/patch style changes to files rather than fully
+      overwrite them, so files that are altered in quick sequence will remain
+      unlike the original
+      - the program could keep a backup somewhere else of the files to diff against
+      immediately before changing
+      - if, after running through all of the files that need to be changed, the
+      program noticies that they're still not identical (because something changed
+      while it was working), it can repeat the process of diffing to figure out
+      what is different and patching the rest of the files.
+claimer: 
