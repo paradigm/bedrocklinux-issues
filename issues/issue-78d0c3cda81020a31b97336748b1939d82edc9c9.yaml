@@ -28,4 +28,19 @@ log_events:
   - cognhuepan <javiergalaz@gmail.com>
   - closed with disposition fixed
   - added locale support for static busybox test
+- - 2013-01-09 13:05:10 Z
+  - paradigm <paradigm@bedrocklinux.org>
+  - re-opened
+  - added locale support for static busybox test
+- - 2013-01-09 13:12:27.676541 Z
+  - paradigm <paradigm@bedrocklinux.org>
+  - commented
+  - |-
+    I'd rather leave it open until the fix is actually in the relevant repo.  You're welcome to retain claimed status on it.
+    
+    Consider perhaps checking return value rather than using gettext; could be simpler.
+    
+    ldd seems to return 0 only if the given file is dynamically linked.  Previous tests should ensure the file is readable, meaning the only way for us to get a non-zero is or the file to be static.  Thus, perhaps:
+    
+        if ldd $1 1>/dev/null
 claimer: cognhuepan <javiergalaz@gmail.com>
