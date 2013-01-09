@@ -5,8 +5,8 @@ type: :bugfix
 component: installer
 release: 
 reporter: cognhuepan <javiergalaz@gmail.com>
-status: :closed
-disposition: :fixed
+status: :started
+disposition: 
 creation_time: 2013-01-09 03:58:10.837154 Z
 references: []
 
