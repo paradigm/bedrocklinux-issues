@@ -1,0 +1,31 @@
+--- !ditz.rubyforge.org,2008-03-06/issue 
+title: Locale issue on busybox-test-1.0alpha3.sh
+desc: the test if [ "$(ldd $1 | cut -c2-)" = "not a dynamic executable" ] is not locale-safe
+type: :bugfix
+component: installer
+release: 
+reporter: cognhuepan <javiergalaz@gmail.com>
+status: :closed
+disposition: :fixed
+creation_time: 2013-01-09 03:58:10.837154 Z
+references: []
+
+id: 78d0c3cda81020a31b97336748b1939d82edc9c9
+log_events: 
+- - 2013-01-09 03:58:15.718179 Z
+  - cognhuepan <javiergalaz@gmail.com>
+  - created
+  - ""
+- - 2013-01-09 03:59:03.774834 Z
+  - cognhuepan <javiergalaz@gmail.com>
+  - issue claimed
+  - using gettext shell capabilities this should work
+- - 2013-01-09 04:06:23.961096 Z
+  - cognhuepan <javiergalaz@gmail.com>
+  - changed status from unstarted to in_progress
+  - ""
+- - 2013-01-09 04:07:29.238487 Z
+  - cognhuepan <javiergalaz@gmail.com>
+  - closed with disposition fixed
+  - added locale support for static busybox test
+claimer: cognhuepan <javiergalaz@gmail.com>
