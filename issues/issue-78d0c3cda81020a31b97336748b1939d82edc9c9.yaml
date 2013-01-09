@@ -5,8 +5,8 @@ type: :bugfix
 component: installer
 release: 
 reporter: cognhuepan <javiergalaz@gmail.com>
-status: :started
-disposition: 
+status: :closed
+disposition: :fixed
 creation_time: 2013-01-09 03:58:10.837154 Z
 references: []
 
@@ -43,4 +43,8 @@ log_events:
     ldd seems to return 0 only if the given file is dynamically linked.  Previous tests should ensure the file is readable, meaning the only way for us to get a non-zero is or the file to be static.  Thus, perhaps:
     
         if ldd $1 1>/dev/null
+- - 2013-01-09 04:07:29.238487 Z
+  - paradigm <paradigm@bedrocklinux.org>
+  - closed with disposition fixed
+  - added locale support for static busybox test
 claimer: cognhuepan <javiergalaz@gmail.com>
