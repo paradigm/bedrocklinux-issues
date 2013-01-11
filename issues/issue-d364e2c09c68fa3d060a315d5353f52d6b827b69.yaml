@@ -1,0 +1,28 @@
+--- !ditz.rubyforge.org,2008-03-06/issue 
+title: brpathfs
+desc: |-
+  It is easy to forget to update the brpath with brp, which occasionally runs
+  into issues.  Instead, perhaps we could create a virtual filesystem, a la
+  /proc, for the brpath which will regenerate the needed files on the fly.  This
+  could be done with FUSE to avoid requiring the user manually patch/compile the
+  kernel.
+type: :feature
+component: userland
+release: 
+reporter: paradigm <paradigm@bedrocklinux.org>
+status: :unstarted
+disposition: 
+creation_time: 2013-01-11 12:52:30.315826 Z
+references: []
+
+id: d364e2c09c68fa3d060a315d5353f52d6b827b69
+log_events: 
+- - 2013-01-11 12:52:33.942799 Z
+  - paradigm <paradigm@bedrocklinux.org>
+  - created
+  - ""
+- - 2013-01-11 12:52:46.052167 Z
+  - paradigm <paradigm@bedrocklinux.org>
+  - issue claimed
+  - ""
+claimer: paradigm <paradigm@bedrocklinux.org>
