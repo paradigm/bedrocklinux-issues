@@ -1,0 +1,43 @@
+--- !ditz.rubyforge.org,2008-03-06/issue 
+title: brinfo virtual filesystem a la /proc
+desc: Create a virtual filesystem (probably via FUSE) which provides information about the various clients.  This should largely replace bri.
+type: :feature
+component: userland
+release: 
+reporter: paradigm <paradigm@bedrocklinux.org>
+status: :unstarted
+disposition: 
+creation_time: 2013-01-11 14:54:51.300731 Z
+references: []
+
+id: ef8e6c818a5aa50f34204ab420460c1bd4fa23b6
+log_events: 
+- - 2013-01-11 15:06:17.058149 Z
+  - paradigm <paradigm@bedrocklinux.org>
+  - created
+  - |-
+    Here's my proposed layout at the moment:
+    
+    It will be mounted at /bedrock/clientinfo.
+    
+    It will contain a directory with each client, and one called "self" which is a
+    symlink to the client which provides the command that is parsing clientinfo
+    
+    Within each directory will be several files:
+    
+     - name.  This will print name of the client.  This is useful so people can
+     read /bedrock/clientinfo/self/name to replace "bri -n"
+    
+     - path.  This will print the path to the client from the absolute root.
+    
+     - setup.  This will indicate whether the client has mount items within it set
+     up.  It can provide several values, including: one which indicates all mounts
+     are properly set, one which indicates none of the mounts are set, and one for
+     the situation where only some are set.  Possibly add name cache information as
+     well.  Additionally, perhaps we could have root write to this to set up mounts
+     to replace brs command, as is sometimes used in /sys.
+    
+     - cmds.  This will list all of the commands provided by the client.
+    
+    other ideas for what to include here are welcome.
+claimer: 
