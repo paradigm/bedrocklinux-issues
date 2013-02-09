@@ -72,3 +72,12 @@ releases:
     - paradigm <paradigm@bedrocklinux.org>
     - released
     - Bedrock Linux 1.0alpha3 is ready to go
+- !ditz.rubyforge.org,2008-03-06/release 
+  name: 1.0alpha4
+  status: :unreleased
+  release_time: 
+  log_events: 
+  - - 2013-02-09 17:44:49.920048 Z
+    - paradigm <paradigm@bedrocklinux.org>
+    - created
+    - ""

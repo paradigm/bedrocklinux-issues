@@ -3,9 +3,9 @@ title: brinfo virtual filesystem a la /proc
 desc: Create a virtual filesystem (probably via FUSE) which provides information about the various clients.  This should largely replace bri.
 type: :feature
 component: userland
-release: 
+release: 1.0alpha4
 reporter: paradigm <paradigm@bedrocklinux.org>
-status: :unstarted
+status: :in_progress
 disposition: 
 creation_time: 2013-01-11 14:54:51.300731 Z
 references: []
@@ -40,4 +40,16 @@ log_events:
      - cmds.  This will list all of the commands provided by the client.
     
     other ideas for what to include here are welcome.
-claimer: 
+- - 2013-02-09 17:45:11.308352 Z
+  - paradigm <paradigm@bedrocklinux.org>
+  - assigned to release 1.0alpha4 from unassigned
+  - ""
+- - 2013-02-09 17:45:42.228844 Z
+  - paradigm <paradigm@bedrocklinux.org>
+  - changed status from unstarted to in_progress
+  - ""
+- - 2013-02-09 17:45:49.694198 Z
+  - paradigm <paradigm@bedrocklinux.org>
+  - issue claimed
+  - ""
+claimer: paradigm <paradigm@bedrocklinux.org>

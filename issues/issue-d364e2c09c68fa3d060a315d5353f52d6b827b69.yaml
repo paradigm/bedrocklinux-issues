@@ -8,9 +8,9 @@ desc: |-
   kernel.
 type: :feature
 component: userland
-release: 
+release: 1.0alpha4
 reporter: paradigm <paradigm@bedrocklinux.org>
-status: :unstarted
+status: :in_progress
 disposition: 
 creation_time: 2013-01-11 12:52:30.315826 Z
 references: []
@@ -24,5 +24,13 @@ log_events:
 - - 2013-01-11 12:52:46.052167 Z
   - paradigm <paradigm@bedrocklinux.org>
   - issue claimed
+  - ""
+- - 2013-02-09 17:45:06.043158 Z
+  - paradigm <paradigm@bedrocklinux.org>
+  - assigned to release 1.0alpha4 from unassigned
+  - ""
+- - 2013-02-09 17:45:34.101112 Z
+  - paradigm <paradigm@bedrocklinux.org>
+  - changed status from unstarted to in_progress
   - ""
 claimer: paradigm <paradigm@bedrocklinux.org>
