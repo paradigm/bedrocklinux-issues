@@ -3,9 +3,9 @@ title: An actual installer is needed
 desc: Requiring people manually follow the instructions on the website to install Bedrock Linux is an unnecessary barrier to entry which should be removed.  An actual installer is needed.
 type: :feature
 component: installer
-release: 
+release: 1.0alpha4
 reporter: paradigm <paradigm@bedrocklinux.org>
-status: :unstarted
+status: :in_progress
 disposition: 
 creation_time: 2012-10-24 17:45:45.254195 Z
 references: []
@@ -62,4 +62,12 @@ log_events:
     - Busybox - or anything else that requires its own configuration (other than
     the kernel) - should have a pre-existing recommended configuration or two the
     user can pick from (in addition to user's own fully-customized choice).
+- - 2013-02-18 14:35:05.823829 Z
+  - paradigm <paradigm@bedrocklinux.org>
+  - changed status from unstarted to in_progress
+  - ""
+- - 2013-02-18 14:35:16.143571 Z
+  - paradigm <paradigm@bedrocklinux.org>
+  - assigned to release 1.0alpha4 from unassigned
+  - ""
 claimer: paradigm <paradigm@bedrocklinux.org>
