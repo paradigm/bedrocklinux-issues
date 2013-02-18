@@ -25,4 +25,41 @@ log_events:
     - Pre-built binaries should not be provided, for fear of end-users then relying on us to keep them up-to-date or limiting flexibility.  We should put some effort in ensuring the end-users are self-sufficient.  Either the binaries will be compiled during install process or yanked from a client.  Until we have an updater, the user should be warned that he or she is responsible for keeping the components up-to-date.  Eventually we should work towards an updater which could automate this.
     
     - Where possible, the user should be provided the option to either use a component from a client, have the installer compile it, or use another pre-compiled version (ie, the user has some solution we don't know about).
-claimer: 
+- - 2013-02-18 14:34:33.810394 Z
+  - paradigm <paradigm@bedrocklinux.org>
+  - issue claimed
+  - |-
+    I've got the basic framework for an installer set up - it should be ready to go
+    for Flopsie.  The idea at the moment:
+    
+    - It will all be a portable /bin/sh script which should run on most major Linux
+    distributions.  Dependent on as little as possible outside of normal UNIX
+    utilities and gcc.
+    
+    - There will be a configuration file the user will have to fill out prior to
+    running which contain options such as whether to compile busybox or use an
+    existing one.  Probably just a simple bourne shell script we can source.  Maybe
+    we'll eventually make a menuconfig for it, linux-kernel/busybox style.
+    
+    - For things it will compile, not yet sure about automating getting the source
+    code or not.  Don't really care to maintain up-to-date information on these
+    things, but automating it would make the process seem a lot easier for end-user.
+    
+    - It won't compile the kernel.  That will, for the foreseeable future, be a
+    manual step.  It expects a pre-existing one, such as from a client.  Users are
+    free to compile their own and point to that in the config.
+    
+    - No automation for partitioning or bootloader at first.  Way to easy to mess
+    up and ruin an end-user's day.  Maybe later.
+    
+    - Likely no automation for adding initial client(s) in first release of
+    installer, but changing that in a later release should be a high priority.
+    
+    - If it requires compiling something, will use a musl-based stack.  This way we
+    can standardize on something rather than fighting with various distros'
+    libraries which may or may not support things like statically compiling things.
+    
+    - Busybox - or anything else that requires its own configuration (other than
+    the kernel) - should have a pre-existing recommended configuration or two the
+    user can pick from (in addition to user's own fully-customized choice).
+claimer: paradigm <paradigm@bedrocklinux.org>
